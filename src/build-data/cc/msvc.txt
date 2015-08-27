@@ -36,8 +36,8 @@ rdrand -> ""
 </isa_flags>
 
 <so_link_commands>
-default       -> "$(LINKER) /DLL"
-default-debug -> "$(LINKER) /DLL /DEBUG"
+default       -> "$(LINKER)"
+default-debug -> "$(LINKER) /_DEBUG"
 </so_link_commands>
 
 <binary_link_commands>
@@ -46,6 +46,6 @@ default-debug -> "$(LINKER) /DEBUG"
 </binary_link_commands>
 
 <mach_abi_linking>
-all       -> "/MD"
-all-debug -> "/MDd"
+all       -> "/MT"
+all-debug -> "/MTd"
 </mach_abi_linking>
